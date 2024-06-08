@@ -1,0 +1,14 @@
+#fondo {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../../../assets/pexels-apasaric-3423860.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  justify-items: center;
+  color: white;
+  padding-top: 30px;
+}

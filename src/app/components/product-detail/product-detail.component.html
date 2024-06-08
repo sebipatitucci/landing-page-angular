@@ -1,0 +1,17 @@
+<div class="container">
+    @if (loading) {
+        <h4>Loading....</h4>
+    }
+    
+    @if (!loading) {
+        <div class="card">
+            <img src="{{product?.image}}" class="card-img-top" alt="{{product?.title}}">
+            <div class="card-body">
+              <h5 class="card-title">{{product?.price | currency}} | {{product?.category | uppercase}} </h5>
+              <h5 class="card-title">{{product?.title}}</h5>
+              <p class="card-text">{{product?.description}}</p>
+              <p class="card-text" style="display: inline; font-weight: bold; font-size: 18px;">{{product?.rating?.rate}}<img src="../../../assets/icons8-emoji-estrella-48.png" alt="" style="height: 28px; padding-bottom: 5px;"></p>
+            </div>
+          </div>
+    }
+</div>
